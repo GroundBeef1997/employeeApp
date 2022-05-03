@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 48px;
+  right: 0px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+
+#menu {
+  background-color: rgba(235, 220, 10, 0.911);
+  margin-left: 25px;
+  margin-top: 10px;
+  color: white;
+}
+
+#menu:hover{
+  background-color: rgba(230, 220, 86, 0.911);
+}
+
+#employeesList {
+  background-color: #329262;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#employeesList:hover {
+  background-color: #20a562;
+}
+
+#employeeCreate {
+  background-color: #c27f8a;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#employeeCreate:hover {
+  background-color: #e49aa6;
+}
+
+li a .fa {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  transform: rotateY(0deg) scale(1);
+  opacity: 0.6;
+}
+
+li a:hover .fa {
+opacity: 1;
+transform: scale(1.3);
+}
+
+html, body { height: 100%; }
+

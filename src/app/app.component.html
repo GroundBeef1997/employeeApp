@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li>
+      <a routerLink="menu" routerLinkActive="active" id="menu" class="btn">
+        Menu     
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </a>
+    </li> 
+  </ul>  
+  <ul class="navbar-nav">
+    <li>
+      <a routerLink="employees" routerLinkActive="active" id="employeesList" class="btn">
+        Employee List
+        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+      </a> 
+    </li>     
+  </ul>  
+  <ul class="navbar-nav">
+    <li>
+      <a routerLink="createEmployee" routerLinkActive="active" id="employeeCreate" class="btn">
+        Add an employee 
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      </a>
+    </li>      
+  </ul>  
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+  <footer class="footer">
+    <div class="container">
+      <br>
+      <span>Tout droit reserver @Julien</span>
+    </div>
+  </footer>
+</div>
+
+
