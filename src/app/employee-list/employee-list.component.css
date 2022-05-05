@@ -1,0 +1,39 @@
+
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open>.dropdown-toggle.btn-warning {
+    background-color: rgb(209, 178, 68);
+}
+
+.btn-warning {
+    background-color: rgb(233, 189, 29);
+    border: 2px solid black;
+    color:rgb(11, 12, 11);
+}
+
+#actionButton {
+    
+    border: 1px;
+}
+
+#actionButton2 {
+    margin-left: 15px;
+}
+
+
+#actionButton3 {
+    margin-left: 15px;
+}
+
+#matCell {
+    vertical-align: middle;
+} 
+  
+#matHeader {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.mat-button {
+    border: 2px solid rgb(178, 178, 236) !important;
+}

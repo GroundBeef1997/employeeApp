@@ -35,9 +35,15 @@
                 
   
                 <div *ngIf="i==3" class="action">
-                    <button (click) = "UpdateEmployee(element.id)" mat-raised-button color="primary" class="btn1">Update</button>
-                    <button (click) = "DeleteEmployee(element.id)" mat-raised-button color="warn" class="btn2" style="margin-left: 15px;">Delete</button>
-                    <button (click) = "EmployeeDetails(element.id)" mat-raised-button color="accent" class="btn3" style="margin-left: 15px;">Details</button>
+                    <button id="actionButton" (click) = "UpdateEmployee(element.id)" class="btn btn-warning">
+                      Update <i style="margin-left: 10px" class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button id="actionButton2" (click) = "DeleteEmployee(element.id)" class="btn btn-danger">
+                      Delete <i style="margin-left: 10px" class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                    <button id="actionButton3" (click) = "EmployeeDetails(element.id)" class="btn btn-primary">
+                      Details <i style="margin-left: 10px" class="fa fa-info-circle" aria-hidden="true"></i>
+                    </button>
                 </div>               
               </td>                
           </ng-container>   
