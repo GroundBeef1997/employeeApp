@@ -8,3 +8,15 @@
     background-position: center center;
     position: absolute;
 }
+
+#car-btn {
+    background-color: rgba(46, 196, 41, 0.911);
+    margin-left: 500px;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  #car-btn:hover{
+    background-color: rgba(104, 224, 100, 0.911);
+  }
+  

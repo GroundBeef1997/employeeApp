@@ -1,6 +1,11 @@
 <h3> Details de l'employé</h3>
 
 <div>
+    <button (click) = "addCar()"  class="btn" id="car-btn" >
+        Add a car
+        <i class="fa fa-car" aria-hidden="true"></i>
+    </button>
+
     <div>
         <label> <b> First Name: </b></label> {{employee.firstName}}
     </div>
@@ -10,6 +15,34 @@
     <div>
         <label> <b> Email: </b></label> {{employee.email}}
     </div>
+
+<div *ngIf="employee.cars != null">
+    <br>
+    <label> <b> Your cars: </b></label>
 </div>
+
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>id</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of employee.cars">
+            <td>{{element.intitule}}</td>
+            <td>{{element.id}}</td>
+            <td>
+                <button (click) = "updateCar(element.id)"  class="btn" style="background-color: aqua;">
+                update a car
+                <i class="fa fa-car" aria-hidden="true"></i>
+            </button>
+        </td>
+        </tr>
+    </tbody>
+</table>
 
 <div id="img"></div>

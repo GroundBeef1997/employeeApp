@@ -1,0 +1,19 @@
+<form name = "form" [formGroup]= "form" (ngSubmit) = "onSubmit()">
+    <div class="col-md-6 offset-md-3">
+        <h2> Ajouter une voiture </h2>       
+            
+        <label>Intitule</label>
+        <input type="text" class ="form-control" id = "intitule"
+            [(ngModel)] = "car.intitule" name = "intitule"
+            formControlName="intitule" required>
+       
+        <div *ngIf="intitule?.invalid && (intitule?.touched) || (intitule?.dirty)" class="text-danger">
+            <span class="error" *ngIf="intitule?.errors?.['required']">A name is required !</span>
+            <span class="error" *ngIf="intitule?.errors?.['pattern']">Enter characters only !</span>
+        </div>
+       
+        <button class = "btn btn-success" type ="submit" [disabled]="form.invalid">Submit</button>           
+    </div>     
+</form>
+
+

@@ -21,6 +21,8 @@ import {MatSortModule} from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { DetailsEmployeeComponent } from './details-employee/details-employee.component';
+import { CreateCarComponent } from './create-car/create-car.component';
+import { UpdateCarComponent } from './update-car/update-car.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { DetailsEmployeeComponent } from './details-employee/details-employee.co
     MenuComponent,
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
-    DetailsEmployeeComponent
+    DetailsEmployeeComponent,
+    CreateCarComponent,
+    UpdateCarComponent
   ],
   imports: [
     BrowserModule,

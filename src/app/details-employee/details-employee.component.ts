@@ -25,4 +25,12 @@ export class DetailsEmployeeComponent implements OnInit {
     });
   }
 
+  addCar() {
+    this.router.navigate(["createCar", this.id])
+  }
+
+  updateCar(id: number) {
+    this.router.navigate(["update-Car", id])
+  }
+
 }
